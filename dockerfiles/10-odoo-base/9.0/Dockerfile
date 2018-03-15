@@ -118,7 +118,7 @@ ENV \
     PGHOST=db \
     WORKERS=6 \
     ADMIN_PASSWORD=admin \
-    SERVER_MODE=test \
+    SERVER_MODE= \
     DISABLE_SESSION_GC=false \
     PROXY_MODE=True \
     WITHOUT_DEMO=True \
