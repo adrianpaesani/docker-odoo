@@ -70,18 +70,16 @@ without_demo = $WITHOUT_DEMO
 server_wide_modules = $SERVER_WIDE_MODULES
 dbfilter = $DBFILTER
 # auto_reload = True
-
 # odoo saas parameters
 server_mode = $SERVER_MODE
 disable_session_gc = $DISABLE_SESSION_GC
-
+filestore_operations_threads = $FILESTORE_OPERATIONS_THREADS
 # smtp server configuration
 smtp_server = $SMTP_SERVER
 smtp_port = $SMTP_PORT
 smtp_ssl = $SMTP_SSL
 smtp_user = $SMTP_USER
 smtp_password = $SMTP_PASSWORD
-
 # other performance parameters
 db_maxconn = $DB_MAXCONN
 limit_memory_hard = $LIMIT_MEMORY_HARD
@@ -89,17 +87,14 @@ limit_memory_soft = $LIMIT_MEMORY_SOFT
 # limit_request = 8192
 limit_time_cpu = $LIMIT_TIME_CPU
 limit_time_real = $LIMIT_TIME_REAL
-
 # aeroo config
 aeroo.docs_enabled = True
 aeroo.docs_host = $AEROO_DOCS_HOST
-
 # afip certificates
 afip_homo_pkey_file = $AFIP_HOMO_PKEY_FILE
 afip_homo_cert_file = $AFIP_HOMO_CERT_FILE
 afip_prod_pkey_file = $AFIP_PROD_PKEY_FILE
 afip_prod_cert_file = $AFIP_PROD_CERT_FILE
-
 " > $ODOO_CONF
 
 # default mail catchall domain, lo usamos para que se establezca por defecto en los containers y que luego el usuario si quiere lo pueda sobreescribir con el parametro
