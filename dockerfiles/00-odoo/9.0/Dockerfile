@@ -1,6 +1,10 @@
 FROM ubuntu:xenial
 MAINTAINER Adrian Paesani <adrian.paesani@gmail.com>
 
+RUN set -x; \
+        apt-get update \
+        && apt-get install -y python3
+
 # segun odoo esta version sigue siendo la recomendable https://github.com/odoo/odoo/wiki/Wkhtmltopdf, la 12.2.1 y las podemos encontrar acá https://wkhtmltopdf.org/downloads.html
 
 ENV WKHTMLTOX_X64 https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
