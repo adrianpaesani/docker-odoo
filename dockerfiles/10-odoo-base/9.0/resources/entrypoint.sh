@@ -74,6 +74,7 @@ dbfilter = $DBFILTER
 server_mode = $SERVER_MODE
 disable_session_gc = $DISABLE_SESSION_GC
 filestore_operations_threads = $FILESTORE_OPERATIONS_THREADS
+logfile = $LOG_FILE
 # smtp server configuration
 smtp_server = $SMTP_SERVER
 smtp_port = $SMTP_PORT
