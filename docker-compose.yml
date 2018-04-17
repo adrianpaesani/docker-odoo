@@ -7,6 +7,9 @@ services:
             - POSTGRES_PASSWORD=odoo
         volumes:
             - pg_data:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+        restart: always
     odoo:
         # build:
         #     context: ./data
@@ -18,17 +21,22 @@ services:
         depends_on:
             - db
         ports:
-            - "8069:8069"
+            - "80:8069"
+            #- "443:8069"
             - "8072:8072"
         volumes:
             - ./data/custom-addons:/opt/odoo/custom-addons
+            - ./data/templates:/opt/odoo/extra-addons/ingadhoc-argentina-reporting/l10n_ar_aeroo_einvoice/templates
+            - ./data/db_backups:/opt/odoo/db_backups
             - odoo_data:/opt/odoo/data
         env_file:
             - .env
+        restart: always
         #these extra env items are for nginx-proxy automated reverse proxy
         #we need to design an automated hostname/dns subsystem 
         environment:
-            - VIRTUAL_HOST=odoo0.local
+            #- VIRTUAL_HOST=odoo0.local
+            - VIRTUAL_HOST=localhost
             - VIRTUAL_PORT=8069
 
 #dependency: nginx-proxy must be running before and must create this network
