@@ -1,3 +1,5 @@
-data/custom-addons/*.*
-data/db_backups/backups/*.*
-data/db_backups/syncked/*.*
+data/custom-addons/theme/artarad_theme_v9/*
+data/custom-addons/theme/backend_theme_v10/*
+data/custom-addons/theme/gasol_backend/*
+data/db_backups/backups/*
+data/db_backups/syncked/*
