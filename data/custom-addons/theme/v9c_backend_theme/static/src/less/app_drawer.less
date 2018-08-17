@@ -7,12 +7,16 @@
     border: 0px solid @dropdown-fallback-border; // IE8 fallback
     border: 0px solid @dropdown-border;
 	border-radius: 0px !important;
-//    -webkit-border-radius: @border-radius-base;
-//    -moz-border-radius: @border-radius-base;
-   border-radius: @border-radius-base;
-//    .box-shadow(0 6px 12px rgba(0, 0, 0, .175));
+    -webkit-border-radius: @border-radius-base;
+    -moz-border-radius: @border-radius-base;
+    border-radius: @border-radius-base;
+    .box-shadow(0 6px 12px rgba(0, 0, 0, .175));
     background-clip: padding-box;
+    z-index: 10000;
 
+    .o_tooltip {
+        z-index: 1051;
+    }
     .navbar-left {
         width: 100%;
 
@@ -86,6 +90,12 @@
 .app-drawer-toggle.navbar-toggle {
 	background-color: #ee3366;
     margin-left: 1em;
+}
+
+/* Icon Focusing */
+
+.web-responsive-focus {
+    .tab-focus();
 }
 
 // Add background image
