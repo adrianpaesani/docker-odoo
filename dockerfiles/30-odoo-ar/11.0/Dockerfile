@@ -1,5 +1,5 @@
-FROM adhoc/odoo-oca:11.0
-MAINTAINER Juan Jose Scarafia <jjs@adhoc.com.ar>
+FROM apaesani/odoo-oca:11.0
+MAINTAINER Adrian Paesani <adrian.paesani@gmail.com>
 
 USER root
 

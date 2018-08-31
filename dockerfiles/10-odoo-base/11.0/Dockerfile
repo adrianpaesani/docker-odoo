@@ -1,5 +1,5 @@
-FROM adhoc/odoo-ubuntu:11.0
-MAINTAINER Juan Jose Scarafia <jjs@adhoc.com.ar>
+FROM apaesani/odoo-base:11.0
+MAINTAINER Adrian Paesani <adrian.paesani@gmail.com>
 
 USER root
 
