@@ -26,7 +26,7 @@ services:
             - "8072:8072"
         volumes:
             - ./data/custom-addons:/opt/odoo/custom-addons
-            - ./data/templates:/opt/odoo/extra-addons/ingadhoc-argentina-reporting/l10n_ar_aeroo_einvoice/templates
+            # - ./data/templates:/opt/odoo/extra-addons/ingadhoc-argentina-reporting/l10n_ar_aeroo_einvoice/templates
             - ./data/db_backups:/opt/odoo/db_backups
             - odoo_data:/opt/odoo/data
         env_file:

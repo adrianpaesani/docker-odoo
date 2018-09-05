@@ -2,7 +2,7 @@ FROM apaesani/odoo-base:11.0
 MAINTAINER Juan Jose Scarafia <jjs@adhoc.com.ar>
 
 USER root
-
+RUN apt-get install build-essential libssl-dev libffi-dev python-dev
 # Get repositories & add files
 WORKDIR ${RESOURCES}
 COPY ./oca-sources.txt ./
