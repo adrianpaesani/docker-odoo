@@ -5,6 +5,7 @@ https://github.com/OCA/account-financial-tools -b 9.0, oca-account-financial-too
 https://github.com/OCA/account-financial-reporting -b 9.0, oca-account-financial-reporting
 https://github.com/OCA/account-invoicing -b 9.0, oca-account-invoicing
 https://github.com/OCA/reporting-engine -b 9.0, oca-reporting-engine
+https://github.com/OCA/stock-logistics-barcode -b 9.0, oca-stock-logistics-barcode
 https://github.com/OCA/stock-logistics-workflow -b 9.0, oca-stock-logistics-workflow
 https://github.com/OCA/stock-logistics-warehouse -b 9.0, oca-stock-logistics-warehouse
 https://github.com/OCA/knowledge -b 9.0, oca-knowledge
